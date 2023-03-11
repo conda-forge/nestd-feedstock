@@ -1,5 +1,5 @@
 {% set name = "nestd" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nestd-{{ version }}.tar.gz
-  sha256: 111e59a7d86bebe903d736a1c7a652c1e75a1c31d5b8aae3b416b7cb2e5ba8e5
+  sha256: 1b946d2bbc16df67ca169b8cb59794ec70b54d4a56a017e3d1c092d364d22a39
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<4.0
+    - python >=3.7,<4.0
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.8,<4.0
+    - python >=3.7,<4.0
 
 test:
   imports:
